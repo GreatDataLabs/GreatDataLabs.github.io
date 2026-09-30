@@ -8,6 +8,7 @@ https://greatdatalabs.github.io/
 
 - [great-generator](https://github.com/GreatDataLabs/great-generator)
 - [acdm-validator](https://github.com/GreatDataLabs/acdm-validator)
+- [Agent Contract Data Modeling white paper](https://greatdatalabs.github.io/acdm/)
 
 ## Local preview
 

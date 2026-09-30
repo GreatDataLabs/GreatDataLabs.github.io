@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Agent Contract Data Modeling (ACDM) | GreatDataLabs</title>
+  <meta name="description" content="Agent Contract Data Modeling is a design-time methodology for building agent-safe enterprise data products with explicit trust, freshness, provenance, cost, and risk contracts." />
+  <meta name="keywords" content="Agent Contract Data Modeling, ACDM, acdm-validator, AI governance, data contracts, agent-safe data products, governance as code, responsible AI, data engineering" />
+  <meta name="author" content="GreatDataLabs" />
+  <link rel="canonical" href="https://greatdatalabs.github.io/acdm/" />
+  <meta property="og:title" content="Agent Contract Data Modeling (ACDM)" />
+  <meta property="og:description" content="A design-time methodology for building agent-safe enterprise data products." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://greatdatalabs.github.io/acdm/" />
+  <meta property="og:site_name" content="GreatDataLabs" />
+  <meta property="og:image" content="https://greatdatalabs.github.io/assets/social-card.svg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Agent Contract Data Modeling (ACDM)" />
+  <meta name="twitter:description" content="A design-time methodology for building agent-safe enterprise data products." />
+  <meta name="twitter:image" content="https://greatdatalabs.github.io/assets/social-card.svg" />
+  <link rel="icon" href="../assets/logo.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="../assets/styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "headline": "Agent Contract Data Modeling: A Design-Time Methodology for Building Agent-Safe Enterprise Data Products",
+    "author": {
+      "@type": "Person",
+      "name": "Ravi Kiran Pagidi"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "GreatDataLabs",
+      "url": "https://greatdatalabs.github.io/"
+    },
+    "datePublished": "2026-06",
+    "version": "ACDM v1.0 Public Draft for Expert Review",
+    "url": "https://greatdatalabs.github.io/acdm/",
+    "encoding": {
+      "@type": "MediaObject",
+      "contentUrl": "https://greatdatalabs.github.io/assets/acdm/acdm-white-paper-final.pdf",
+      "encodingFormat": "application/pdf"
+    },
+    "about": [
+      "Agent Contract Data Modeling",
+      "AI governance",
+      "data contracts",
+      "agent-safe data products"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="../" aria-label="GreatDataLabs home">
+        <img src="../assets/logo.svg" alt="" width="36" height="36" />
+        <span>GreatDataLabs</span>
+      </a>
+      <div class="nav-links">
+        <a href="../#projects">Projects</a>
+        <a href="#paper">White paper</a>
+        <a href="#methodology">Methodology</a>
+        <a href="#validator">Validator</a>
+        <a class="nav-pill" href="https://github.com/GreatDataLabs">GitHub</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero acdm-hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Agent Contract Data Modeling</p>
+        <h1>Design-time contracts for agent-safe enterprise data products.</h1>
+        <p class="lede">ACDM defines how agent-facing entities declare trust, freshness, provenance, cost, and risk before autonomous or semi-autonomous AI systems consume data and act on it.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="../assets/acdm/acdm-white-paper-final.pdf">Download white paper</a>
+          <a class="button secondary" href="https://github.com/GreatDataLabs/acdm-validator">View validator</a>
+          <a class="button secondary" href="../">Back to GreatDataLabs</a>
+        </div>
+      </div>
+      <aside class="hero-card paper-card" id="paper" aria-label="ACDM white paper details">
+        <p class="eyebrow">White paper</p>
+        <h2>Agent Contract Data Modeling</h2>
+        <p>A design-time methodology for building agent-safe enterprise data products.</p>
+        <dl class="paper-facts">
+          <div><dt>Author</dt><dd>Ravi Kiran Pagidi</dd></div>
+          <div><dt>Version</dt><dd>ACDM v1.0 public draft</dd></div>
+          <div><dt>Date</dt><dd>June 2026</dd></div>
+          <div><dt>Format</dt><dd>PDF, 23 pages</dd></div>
+        </dl>
+      </aside>
+    </section>
+
+    <section class="section intro">
+      <div>
+        <p class="eyebrow">Why ACDM exists</p>
+        <h2>Agentic AI changes the consumer of enterprise data.</h2>
+      </div>
+      <p>Traditional schemas and catalogs describe what data looks like, but they do not always tell an agent whether data is fresh enough, traceable enough, trusted enough, affordable enough, or safe enough for a specific class of action. ACDM makes those expectations explicit before runtime.</p>
+    </section>
+
+    <section class="section" id="methodology">
+      <div class="section-heading">
+        <p class="eyebrow">Methodology</p>
+        <h2>The five agent-facing properties.</h2>
+      </div>
+      <div class="focus-grid acdm-property-grid">
+        <div class="focus-card"><h3>Trust</h3><p>Declares confidence in the entity and how conservative downstream use should be.</p></div>
+        <div class="focus-card"><h3>Freshness</h3><p>Sets maximum data age expectations so stale data does not silently drive agent decisions.</p></div>
+        <div class="focus-card"><h3>Provenance</h3><p>Requires traceability to origins, transformations, ownership, and audit context.</p></div>
+        <div class="focus-card"><h3>Cost</h3><p>Makes operational or monetary consumption costs visible before automated workflows run.</p></div>
+        <div class="focus-card"><h3>Risk</h3><p>Classifies sensitivity and action risk so unsafe use is blocked or constrained.</p></div>
+      </div>
+    </section>
+
+    <section class="section acdm-callout" id="validator">
+      <div class="acdm-copy">
+        <p class="eyebrow">Reference implementation</p>
+        <h2>Validate ACDM contracts before agents consume the data.</h2>
+        <p>The acdm-validator project turns the methodology into governance-as-code checks for entity contracts, composition rules, permission ceilings, maturity stages, and audit records.</p>
+      </div>
+      <div class="acdm-actions">
+        <a class="button primary" href="https://github.com/GreatDataLabs/acdm-validator">Open validator repo</a>
+        <a class="button secondary" href="https://github.com/GreatDataLabs/acdm-validator#readme">Read README</a>
+        <a class="button secondary" href="../assets/acdm/acdm-white-paper-final.pdf">Download PDF</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand">
+      <img src="../assets/logo.svg" alt="" width="28" height="28" />
+      <span>GreatDataLabs</span>
+    </div>
+    <div class="footer-links">
+      <a href="../">Home</a>
+      <a href="https://github.com/GreatDataLabs">GitHub</a>
+      <a href="https://github.com/GreatDataLabs/acdm-validator">acdm-validator</a>
+      <a href="../sitemap.xml">Sitemap</a>
+    </div>
+    <p class="small">Open-source data engineering tools from Virginia, USA. ACDM materials are provided for expert review, practitioner feedback, and responsible AI data-system design.</p>
+  </footer>
+</body>
+</html>
